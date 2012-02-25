@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Knami - Konami Code for jQuery</title>
+  <script src="lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jquery.knami.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      $.knami({
+        onKonamiCodeComplete: function() {
+          $("#konami").html("Squirrels with Bazookas! BOOM!")
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1 id="konami">Welcome</h1>
+</body>
+</html>
